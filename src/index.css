@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-obsidian: #0E0E10;
+    --bg-surface: #131315;
+    --bg-charcoal: #1C1B1D;
+    --bg-container: #201F21;
+    --bg-container-high: #2A2A2C;
+    --bg-container-highest: #353437;
+    --primary-brown: #3D2B1F;
+    --earth-accent: #5E4634;
+    --primary-tint: #DEC1AF;
+    --secondary-tint: #DEC1A6;
+    --on-surface: #E5E1E4;
+    --on-surface-variant: #D2C4BC;
+    --glass-border: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0E0E10;
+    color: #E5E1E4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Custom smooth scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #131315;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #353437;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5E4634;
+  }
+}
+
+.glass-panel {
+  background-color: #1C1B1D;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-subtle {
+  background-color: #131315;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-input {
+  background-color: #131315;
+  border: 1px solid #353437;
+  color: #E5E1E4;
+  transition: all 0.15s ease-in-out;
+}
+.glass-input:focus {
+  border-color: #DEC1AF;
+  box-shadow: 0 0 0 1px rgba(222, 193, 175, 0.3);
+  outline: none;
+}
+
